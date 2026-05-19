@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.65;
+    color: #222;
+    background: #fafaf7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #1a2332;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #c9a96b;
+}
+.brand {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+header nav { display: flex; flex-wrap: wrap; gap: 1.2rem; }
+header nav a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+header nav a:hover { color: #c9a96b; }
+main {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #1a2332;
+    margin-top: 1rem;
+}
+h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4rem;
+    color: #1a2332;
+    margin-top: 2rem;
+}
+p { margin: 1rem 0; }
+a { color: #6b4f1d; }
+.intro {
+    font-style: italic;
+    color: #555;
+    font-size: 1.05rem;
+    border-left: 3px solid #c9a96b;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+.related {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ddd;
+}
+.related h2 {
+    font-size: 1.1rem;
+    margin-top: 0;
+}
+.related ul { padding-left: 1.5rem; }
+.related li { margin: 0.3rem 0; }
+.toc {
+    list-style: none;
+    padding: 0;
+    columns: 2;
+    column-gap: 2rem;
+}
+.toc li { padding: 0.3rem 0; break-inside: avoid; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+footer {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 0.9rem;
+}
+@media (max-width: 600px) {
+    h1 { font-size: 1.5rem; }
+    main { padding: 0 1rem; }
+    header { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1rem; }
+    header nav { gap: 0.8rem; }
+    .toc { columns: 1; }
+}
